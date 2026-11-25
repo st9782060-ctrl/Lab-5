@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    unsigned long long product = 1;
+
+    cout << "Numbers divisible by 4 and less than 40: ";
+    for (int i = 4; i < 40; i += 4) {
+        cout << i << " ";
+        product *= i;
+    }
+
+    cout << "\nProduct = " << product << endl;
+
+    cout << "Press Enter to exit...";
+    cin.get();
+    return 0;
+}
