@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double x, y;
+
+    cout << "Enter 5 values for x:" << endl;
+    for (int i = 1; i <= 5; i++) {
+        cout << "x[" << i << "] = ";
+        cin >> x;
+
+        y = sin(x / 5.0) + x - 1.5;
+        cout << "  -> y = " << y << endl;
+    }
+
+    system("pause");
+    return 0;
+}
